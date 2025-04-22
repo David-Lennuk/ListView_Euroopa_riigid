@@ -57,8 +57,10 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\Eesti.png" />
+	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\lati.png" />
 	  <None Remove="Resources\Images\leedu.png" />
+	  <None Remove="Resources\Images\location.png" />
 	  <None Remove="Resources\Images\pilt.png" />
 	  <None Remove="Resources\Images\rootsi.png" />
 	  <None Remove="Resources\Images\soome.png" />
@@ -71,7 +73,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AboutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="EuroopaRiigid_Page.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NotePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="StartPage.xaml">

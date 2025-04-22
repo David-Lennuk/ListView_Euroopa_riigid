@@ -7,9 +7,20 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ListView_Euroopa_riigid">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:StartPage}"
-        Route="StartPage" />
+    <TabBar>
+        <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate local:StartPage}"
+            Icon="{OnPlatform 'home.png'}"
+            Route="StartPage" />
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:StartPage}"
+            Icon="{OnPlatform 'home.png'}"
+            Route="StartPage" />
+
+    </TabBar>
+
 
 </Shell>
