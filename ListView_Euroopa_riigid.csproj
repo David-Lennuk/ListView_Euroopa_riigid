@@ -62,8 +62,10 @@
 	  <None Remove="Resources\Images\leedu.png" />
 	  <None Remove="Resources\Images\location.png" />
 	  <None Remove="Resources\Images\pilt.png" />
+	  <None Remove="Resources\Images\red_flag.png" />
 	  <None Remove="Resources\Images\rootsi.png" />
 	  <None Remove="Resources\Images\soome.png" />
+	  <None Remove="Resources\Images\Teku.png" />
 	</ItemGroup>
 
 	<ItemGroup>

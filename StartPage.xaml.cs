@@ -2,7 +2,7 @@ namespace ListView_Euroopa_riigid;
 
 public partial class StartPage : ContentPage
 {
-    public List<ContentPage> lehed = new List<ContentPage>() { new EuroopaRiigidPage() };
+    public List<ContentPage> lehed = new List<ContentPage>() {};
     public List<string> tekstid = new List<string> { "Tee Euroopa riigid" };
 
     ScrollView sv;

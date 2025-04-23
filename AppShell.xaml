@@ -10,15 +10,34 @@
     <TabBar>
         <ShellContent
             Title="Notes"
-            ContentTemplate="{DataTemplate local:StartPage}"
-            Icon="{OnPlatform 'home.png'}"
+            ContentTemplate="{DataTemplate local:NotePage}"
+            Icon="{OnPlatform 'location.png'}"
             Route="StartPage" />
 
         <ShellContent
-            Title="Home"
-            ContentTemplate="{DataTemplate local:StartPage}"
-            Icon="{OnPlatform 'home.png'}"
+            Title=""
+            ContentTemplate="{DataTemplate local:EuroopaRiigidPage}"
+            Icon="{OnPlatform 'teku.png'}"
             Route="StartPage" />
+
+        <ShellContent
+            Title="Lipud"
+            ContentTemplate="{DataTemplate local:NotePage}"
+            Icon="{OnPlatform 'red_flag.png'}"
+            Route="StartPage" />
+
+        <ShellContent
+            Title="Lipud"
+            ContentTemplate="{DataTemplate local:EuroopaRiigidPage}"
+            Icon="{OnPlatform 'red_flag.png'}"
+            Route="StartPage" />
+
+        <ShellContent
+            Title="Lipud"
+            ContentTemplate="{DataTemplate local:NotePage}"
+            Icon="{OnPlatform 'red_flag.png'}"
+            Route="StartPage" />
+
 
     </TabBar>
 

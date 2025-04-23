@@ -1,25 +1,32 @@
-namespace ListView_Euroopa_riigid;
+using System;
+using Microsoft.Maui.Controls;
 
-public partial class NotePage : ContentPage
+namespace ListView_Euroopa_riigid
 {
-    string _fileName = Path.Combine(FileSystem.AppDataDirectory, "notes.txt");
-    public NotePage()
+    public partial class NotePage : ContentPage
     {
-        InitializeComponent();
-        if (File.Exists(_fileName))
-            TextEditor.Text = File.ReadAllText(_fileName);
-    }
+        public NotePage()
+        {
+            InitializeComponent();
+        }
 
-    private void DeleteButton_Clicked(object sender, EventArgs e)
-    {
-        if (File.Exists(_fileName))
-            File.Delete(_fileName);
+        private void SaveButton_Clicked(object sender, EventArgs e)
+        {
+            string noteText = TextEditor.Text;
+            if (!string.IsNullOrWhiteSpace(noteText))
+            {
+                DisplayAlert("Note Saved", "Your note has been saved successfully!", "OK");
+            }
+            else
+            {
+                DisplayAlert("Warning", "Please enter a note before saving.", "OK");
+            }
+        }
 
-        TextEditor.Text = string.Empty;
-    }
-
-    private void SaveButton_Cliked(object sender, EventArgs e)
-    {
-        File.WriteAllText(_fileName, TextEditor.Text);
+        private void DeleteButton_Clicked(object sender, EventArgs e)
+        {
+            TextEditor.Text = string.Empty;
+            DisplayAlert("Note Deleted", "Your note has been deleted.", "OK");
+        }
     }
 }
